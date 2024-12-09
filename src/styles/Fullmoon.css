@@ -1,0 +1,25 @@
+.wishcontainer{
+    margin-left:8%;
+    margin-top:60%;
+}
+.wishbutton{
+    width:100%;
+    height:2.5rem;
+}
+.writer{
+    color:white;
+    font-family: 'SF_HailSnow', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+.wish{
+    color: white;
+    font-family: 'SF_HailSnow', sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    background-color: rgba(217, 217, 217, 0.3);
+    width: 90%;
+    height: 6rem;
+    border:1px solid #111111;
+    border-radius: 3%;
+}

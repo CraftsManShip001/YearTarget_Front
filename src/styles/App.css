@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'SF_HailSnow';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HailSnow.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  background-color: #111111;
+  background-image: url('../assets/Stars.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180vh;
+}

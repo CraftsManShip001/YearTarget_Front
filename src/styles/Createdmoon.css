@@ -1,0 +1,18 @@
+.showtext{
+    font-size: 0.9rem;
+    font-family: 'SF_HailSnow', sans-serif;
+    white-space: pre-wrap;
+    color: white;
+}
+.fullmoon{
+    width: 100%;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top:-10%;
+}
+.buttoncontainer{
+    position: relative;
+    margin-top:78%;
+    z-index: 10;
+}
