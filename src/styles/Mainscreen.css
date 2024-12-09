@@ -38,6 +38,11 @@
     width:100%;
   }
 }
+@media (min-width: 500px){
+  .mainmoon{
+    visibility: hidden;
+  }
+}
 .textcontainer{
     font-family: 'SF_HailSnow', sans-serif;
     text-align: center;
