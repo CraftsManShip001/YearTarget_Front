@@ -7,6 +7,13 @@ input{
     font-size: 1.3rem;
     margin:auto;
 }
+
+@media (max-width: 389px){
+  .inputext{
+    font-size:1.11rem;
+  }
+}
+
 .inputcontainer{
     margin-left: 15%;
     margin-bottom: 5%;
