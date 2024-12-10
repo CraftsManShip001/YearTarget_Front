@@ -14,6 +14,7 @@ import Writingmoon from "./Writingmoon.jsx";
 import Fullmoon from "./Fullmoon.jsx";
 import Pc from './Pc.jsx';
 import Other from "./Other.jsx";
+import Aftermainmenu from "./Aftermainmenu.jsx";
 
 const isPc = () => {
   const user = navigator.userAgent;
@@ -31,15 +32,19 @@ function App() {
   const [person,setPerson] = useState(0);
   const [writers,setWriters]  =useState([]);
   const [nowriter,setNowriter] = useState(0);
-
+  let isAfter = 0;
+  let today = new Date();
   if(isPc()){
     return <Pc></Pc>
   }
+  if(today.getFullYear() === 2025) isAfter = 1;
+  else isAfter = 0;
+
   return (
     <CSSTransition>
       <Routes> 
         <Route path = "/" element = {<Mainscreen></Mainscreen>}></Route>
-        <Route path = "/mainmenu" element = {<Mainmenu></Mainmenu>}></Route>
+        <Route path = "/mainmenu" element = {isAfter ? <Aftermainmenu></Aftermainmenu> : <Mainmenu></Mainmenu>}></Route>
         <Route path = "/createmoon" element = {<Createmoon setUser_name = {setUser_name} setMoonid = {setMoonid} ></Createmoon>}></Route>
         <Route path = "/landmoon" element = {<Landmoon setUser_name = {setUser_name} setMoonid = {setMoonid} setWriter = {setWriter} ></Landmoon>}></Route>
         <Route path = "/mypage" element = {<Mypage setPerson = {setPerson} setUser_name={setUser_name} setWriters = {setWriters}></Mypage>}></Route>
