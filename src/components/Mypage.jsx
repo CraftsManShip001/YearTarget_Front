@@ -43,7 +43,7 @@ function Mypage({setPerson,setUser_name,setWriters}){
             <div className="fade-in-top" style={{marginTop:'15%'}}>
                 <Input content={'당신의 달 코드를 입력해주세요'} id = {"moonid"} type = {"text"} style = {{width:'80%',height: '1.75em'}}/>
                 <Input content={'비밀번호를 입력해주세요'} id = {"password"} type = {"password"} style = {{width:'80%',height: '1.75em'}}/>
-                <div style={{marginTop:'60%', paddingBottom:"50%"}}>
+                <div style={{marginTop:'60%', paddingBottom:"60%"}}>
                     <Button
                         content = {"달 보러가기"}
                         onClick = {async()=>{
