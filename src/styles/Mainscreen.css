@@ -4,9 +4,9 @@
     overflow: hidden;
 }
 .mainmoon{
-    width: 130%;
+    width: 100%;
     position: absolute; 
-    bottom: 0; 
+    bottom: -5%; 
     left: 50%; 
     transform: translateX(-50%);
     background-color: #111111;
@@ -15,7 +15,7 @@
 
 .YearTarget{
     font-family: 'SF_HailSnow', sans-serif;
-    font-size: 5rem;
+    font-size: 4.2rem;
     text-align: center; 
     white-space: pre-wrap;
     color:white;
@@ -29,10 +29,10 @@
 }
 @media (max-width: 389px) {
   .YearTarget{
-    font-size:4.2rem;
+    font-size:4.5rem;
   }
   .shorttext{
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   .mainmoon{
     width:100%;

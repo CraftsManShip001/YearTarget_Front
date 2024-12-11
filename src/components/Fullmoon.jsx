@@ -54,7 +54,7 @@ function Fullmoon({person,writers,nowriter,setNowriter}){
                     />
                 </div>
             </div>
-            <div className='buttoncontainer' style={{marginTop:'25%'}}>
+            <div className='buttoncontainer' style={{marginTop:'25%',paddingBottom:"75%"}}>
                 <Button
                     content = {"지구로 추락하기"}
                     onClick = {()=>{

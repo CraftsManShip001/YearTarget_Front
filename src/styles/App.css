@@ -4,6 +4,13 @@
   font-weight: normal;
   font-style: normal;
 }
+body{
+  background-color: #111111;
+  background-image: url('../assets/Stars.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 .container {
   background-color: #111111;
   background-image: url('../assets/Stars.png');
@@ -11,5 +18,5 @@
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 180vh;
+  height: 100%;
 }

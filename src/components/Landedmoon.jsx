@@ -25,7 +25,7 @@ function Landedmoon({user_name,moonid,writer}){
                 </div>
             </div>
             <img src = {fullmoon} className='fullmoon'></img>
-            <div className='buttoncontainer'>
+            <div className='buttoncontainer' style={{paddingBottom:"40%"}}>
                 <Button
                     content = {"목표 작성하기"}
                     onClick = {()=>{

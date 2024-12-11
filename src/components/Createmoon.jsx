@@ -33,7 +33,7 @@ function Createmoon({setUser_name,setMoonid}){
                 <Input content={'당신의 이름을 입력해주세요'} id = {"user_name"} type = {"text"} style = {{width:'80%',height: '1.75em'}}/>
                 <Input content={'비밀번호를 입력해주세요'} id = {"user_password"} type = {"password"} style = {{width:'80%',height: '1.75em'}}/>
                 <Input content={'비밀번호를 확인해주세요'} id = {"check_password"} type = {"password"} style = {{width:'80%',height: '1.75em'}}/>
-                <div style={{marginTop:'40%'}}>
+                <div style={{marginTop:'40%', paddingBottom:'60%'}}>
                     <Button
                         content = {"새로운 달 생성하기"}
                         onClick = {async()=>{

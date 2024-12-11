@@ -26,7 +26,7 @@ function Createdmoon({user_name,moonid}){
                 </div>
             </div>
             <img src = {fullmoon} className='fullmoon'></img>
-            <div className='buttoncontainer'>
+            <div className='buttoncontainer' style={{paddingBottom:"40%"}}>
                 <Button
                     content = {"소식 전하기"}
                     onClick = {async()=>{

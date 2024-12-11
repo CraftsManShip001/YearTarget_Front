@@ -32,7 +32,7 @@ function Mypagemoon({person,user_name}){
             <div className='textcontainer' style={{marginTop:"55%"}}>
                 <h3 className='text-focus-in' style={{color:'white', fontSize:'1.2rem'}}>현재까지 달 착륙 소원 : {person}개</h3>
             </div>
-            <div className='buttoncontainer' style={{marginTop:'10%'}}>
+            <div className='buttoncontainer' style={{marginTop:'10%', paddingBottom:'90%'}}>
                 <Button
                     content = {"착륙자 확인하기"}
                     onClick = {()=>{

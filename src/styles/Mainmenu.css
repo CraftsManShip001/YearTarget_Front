@@ -7,14 +7,16 @@
     margin-top: 12%;
 
 }
-
-@media (max-width: 389px) {
+h2{
+        font-size: 1.3rem;
+}
+@media (min-width: 389px) {
         h2{
                 font-size:1.2rem;
         }
         .menumoon{
                 width: 70%;
-                margin-top:3%;
+                margin-top:15%;
         }
 }
 
