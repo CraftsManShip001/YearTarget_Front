@@ -4,10 +4,6 @@ import { useNavigate } from 'react-router-dom';
 
 function Mainmenu(){
     let navigate = useNavigate();
-    const preventScroll = (event) => {
-        event.preventDefault();
-    };
-    document.body.addEventListener('touchmove', preventScroll, { passive: false });
     return(
         <div className="container" style={{height:"100vh"}}>
             <div className="maincontainer">

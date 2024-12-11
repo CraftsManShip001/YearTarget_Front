@@ -5,10 +5,6 @@ import Button from './Button.jsx';
 
 function Mainscreen(){
     let navigate = useNavigate();
-    const preventScroll = (event) => {
-        event.preventDefault();
-    };
-    document.body.addEventListener('touchmove', preventScroll, { passive: false });
     return(
         <div className='scroll'>
             <div className='container'>
