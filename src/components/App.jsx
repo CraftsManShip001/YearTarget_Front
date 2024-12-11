@@ -18,7 +18,7 @@ import Aftermainmenu from "./Aftermainmenu.jsx";
 
 const isPc = () => {
   const user = navigator.userAgent;
-  if ( user.indexOf("iPhone") > -1 || user.indexOf("Android") > -1 || user.indexOf('iPad') ) {
+  if ( user.indexOf("iPhone") > -1 || user.indexOf("Android") > -1 ) {
     	return 0;
   }else{
       return 1;
