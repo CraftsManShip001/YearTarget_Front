@@ -29,7 +29,7 @@ function Landmoon({setUser_name,setMoonid,setWriter}){
             <div className="fade-in-top" style={{marginTop:'15%'}}>
                 <Input content={'당신의 이름을 입력해주세요'} id = {'user_name'} type = {"text"} style = {{width:'80%',height: '1.75em'}}/>
                 <Input content={'착륙할 달 코드를 입력해주세요'} id = {'user_moonid'} type = {"text"} style = {{width:'80%',height: '1.75em'}}/>
-                <div style={{marginTop:'60%', paddingBottom:'40%'}}>
+                <div style={{marginTop:'60%', paddingBottom:'50%'}}>
                     <Button
                         content = {"달 착륙하러 가기"}
                         onClick = { async ()=>{
