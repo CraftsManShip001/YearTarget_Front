@@ -20,6 +20,12 @@ h2{
         }
 }
 
+@media (min-width : 768px){
+        h2{
+                font-size:2rem;
+        }
+}
+
 .text{
     margin-bottom: 35%;
 }

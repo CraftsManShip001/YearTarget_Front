@@ -38,24 +38,20 @@ function Pc(){
         <div className='scroll'>
             <div className='container'>
                 <div className="maincontainer">
-                        <div className="timertext" style={{marginLeft:"12%"}}>
-                            <p className="timer" id="day">{days}</p>
-                            <span>days</span>
+                        <div className="timertext" style={{marginLeft:"9%"}}>
+                            <p className="timer" id="day">{days}일</p>
                         </div>
 
                         <div className="timertext">
-                            <p className="timer" id="hours">{hours}</p>
-                            <span>hours</span>
+                            <p className="timer" id="hours">{hours}시간</p>
                         </div>
 
                         <div className="timertext">
-                            <p className="timer" id="mins">{mins}</p>
-                            <span>mins</span>
+                            <p className="timer" id="mins">{mins}분</p>
                         </div>
 
                         <div className="timertext">
-                            <p className="timer" id="seconds">{seconds}</p>
-                            <span>seconds</span>
+                            <p className="timer" id="seconds">{seconds}초</p>
                         </div>
                 </div>
             </div>
