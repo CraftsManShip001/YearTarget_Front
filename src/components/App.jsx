@@ -15,6 +15,9 @@ import Fullmoon from "./Fullmoon.jsx";
 import Pc from './Pc.jsx';
 import Other from "./Other.jsx";
 import Aftermainmenu from "./Aftermainmenu.jsx";
+import Aftermypage from "./Aftermypage.jsx";
+import Aftermypages from "./Aftermypages.jsx";
+import Afterfullmoon from "./Afterfullmoon.jsx";
 
 const isPc = () => {
   const user = navigator.userAgent;
@@ -32,6 +35,7 @@ function App() {
   const [person,setPerson] = useState(0);
   const [writers,setWriters]  =useState([]);
   const [nowriter,setNowriter] = useState(0);
+  const [wishes,setWishes] = useState('');
   let isAfter = 0;
   let today = new Date();
   if(isPc()){
@@ -48,11 +52,14 @@ function App() {
         <Route path = "/createmoon" element = {<Createmoon setUser_name = {setUser_name} setMoonid = {setMoonid} ></Createmoon>}></Route>
         <Route path = "/landmoon" element = {<Landmoon setUser_name = {setUser_name} setMoonid = {setMoonid} setWriter = {setWriter} ></Landmoon>}></Route>
         <Route path = "/mypage" element = {<Mypage setPerson = {setPerson} setUser_name={setUser_name} setWriters = {setWriters}></Mypage>}></Route>
+        <Route path = "/aftermypages" element = {<Aftermypages setPerson = {setPerson} setUser_name={setUser_name} setWriters = {setWriters} setWishes={setWishes}></Aftermypages>}></Route>
         <Route path = "/createdmoon" element = {<Createdmoon user_name = {user_name} moonid = {moonid}></Createdmoon>}></Route>
         <Route path = "/landmoon/landedmoon" element = {<Landedmoon user_name = {user_name} moonid = {moonid} writter = {writer} ></Landedmoon>}></Route>
         <Route path = "/mypage/mypagemoon" element = {<Mypagemoon person = {person} user_name={user_name}></Mypagemoon>}></Route>
         <Route path = "/landmoon/landedmoon/writing" element = {<Writingmoon writer = {writer} moonid={moonid} user_name={user_name}></Writingmoon>}></Route>
         <Route path = "/mypage/mypagemoon/fullmoon" element = {<Fullmoon person = {person} writers = {writers} nowriter = {nowriter} setNowriter = {setNowriter}></Fullmoon>}></Route>
+        <Route path = "/aftermypages/aftermypage/afterfullmoon" element = {<Afterfullmoon person = {person} writers = {writers} nowriter = {nowriter} setNowriter = {setNowriter} wishes = {wishes}></Afterfullmoon>}></Route>
+        <Route path = "/aftermypages/aftermypage" element = {<Aftermypage person = {person} user_name={user_name}></Aftermypage>}></Route>
         <Route path = "*" element = {<Other></Other>}></Route>
       </Routes>
     </CSSTransition>

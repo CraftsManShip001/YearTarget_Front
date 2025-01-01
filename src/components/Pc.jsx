@@ -39,7 +39,7 @@ function Pc(){
             <div className='container'>
                 <div className="maincontainer">
                         <div className="timertext" style={{marginLeft:"9%"}}>
-                            <p className="timer" id="day">{days}일</p>
+                            <p className="timer" id="day">+{days}일</p>
                         </div>
 
                         <div className="timertext">
